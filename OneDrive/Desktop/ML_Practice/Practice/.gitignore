@@ -1,0 +1,12 @@
+# Ignore all files in the Documents folder
+/Documents/
+
+# Ignore specific file types
+*.zip
+*.exe
+*.pdf
+
+# Ignore all files in directories
+/Recorded Calls/
+/Saved Games/
+/Videos/
