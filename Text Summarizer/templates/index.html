@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h11">Text Summarizer</h1>
+    
+        <div class="flex-container">
+            <!-- Left side: Input text area -->
+            <div class="section1">
+                <h2>Enter your text</h2>
+                <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+                <button id="summarizeButton">Summarize Text</button>
+            </div>
+    
+            <!-- Right side: Summary output -->
+            <div class="section2">
+                <h2>Summary</h2>
+                <div id="summaryOutput">
+                    <p id="summaryText">The summary will appear here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
